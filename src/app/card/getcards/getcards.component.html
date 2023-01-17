@@ -1,0 +1,32 @@
+
+<div>
+
+  <div class="max-w-[80%] m-auto">
+    <label for="countries" class="text-center p-2 block mb-2 text-blue-500 text-[30px] bold-text font-medium text-gray-900 dark:text-white">Select a category</label>
+  </div>
+
+    <div class="sm:grid-cols-1  justify-around	 md:grid-cols-2 mt-3 lg:grid-cols-3 grid max-w-[80%] m-auto">
+
+      <div class="" *ngFor="let items of cards " >
+
+
+        <div class="rounded-lg m-6 shadow-lg bg-white max-w-[300px] h-[400px]">
+          <a href="#!">
+            <img class="rounded-t-lg h-[200px] max-w-[250px] m-auto"src="{{items.image}}" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2"> {{items.price | currency}}</h5>
+            <p class="text-gray-700 text-base h-[60px] mb-4">
+              {{items.title | slice:0:60}}
+            </p>
+
+            <button  (click)="removeitem(items.id)" type="button" class=" m-auto inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out mr-1">Delete</button>
+
+            <button  type="button" class=" m-auto inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>

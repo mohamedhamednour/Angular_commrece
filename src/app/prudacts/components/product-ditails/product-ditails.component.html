@@ -1,0 +1,29 @@
+
+<div>
+
+  <div class="max-w-[80%] m-auto">
+    <label for="countries" class="text-center p-2 block mb-2 text-blue-500 text-[30px] bold-text font-medium text-gray-900 dark:text-white">{{data.title | slice:0:20}}</label>
+
+  </div>
+
+    <div class="sm:grid-cols-1  justify-around	  max-w-[80%] m-auto">
+
+      <div class=" 	 	 ">
+
+
+        <div class="rounded-lg m-6 shadow-lg bg-white ">
+          <a href="#!">
+            <img class="rounded-t-lg max-h-[300px] max-w-[400px] m-auto"src="{{data.image}}" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-center text-xl font-medium mb-2"> {{data.price | currency}}</h5>
+            <p class="text-gray-700 text-center text-base h-[60px] mb-4">
+              {{data.title | slice:0:60}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
