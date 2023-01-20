@@ -8,11 +8,17 @@ import {PrudactsModule} from '../prudacts/prudacts.module'
 import {GetcardsComponent} from '../card/getcards/getcards.component'
 import { RouterModule } from '@angular/router';
 import { CategorysrondomComponent } from './components/categorysrondom/categorysrondom.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
+
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     CategorysrondomComponent,
+    AboutComponent,
+    HomeComponent,
 
 
   ],
@@ -21,7 +27,7 @@ import { CategorysrondomComponent } from './components/categorysrondom/categorys
     PrudactsModule,
     CommonModule,
     CardModule,
-    RouterModule
+    RouterModule,CarouselModule
 
 
 
