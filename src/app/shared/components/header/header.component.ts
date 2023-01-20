@@ -28,6 +28,13 @@ export class HeaderComponent {
 
   }
 
+show(){
+  $('#clicks').click(()=>{
+    $("#navbar-solid-bg").toggle();
 
+
+  })
+
+}
 }
 
