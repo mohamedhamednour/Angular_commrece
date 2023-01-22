@@ -5,11 +5,13 @@ import {ProductDitailsComponent} from './prudacts/components/product-ditails/pro
 import {    GetcardsComponent} from '../app/card/getcards/getcards.component'
 import { AboutComponent } from './shared/components/about/about.component';
 import { HomeComponent } from './shared/components/home/home.component';
-
+import { ServicePageComponent } from './shared/components/service-page/service-page.component';
 const routes: Routes = [
   {path:'products' , component:AllProductsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'product/:id' , component:ProductDitailsComponent},
+  {path:'serviece' , component:ServicePageComponent},
+
   {path:'home' , component:HomeComponent},
 
   {path:'cards' , component:GetcardsComponent},

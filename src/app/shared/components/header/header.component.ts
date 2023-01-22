@@ -29,11 +29,11 @@ export class HeaderComponent {
   }
 
 show(){
-  $('#clicks').click(()=>{
-    $("#navbar-solid-bg").toggle();
+
+    $("#navbar-solid-bg").fadeToggle('slow');
 
 
-  })
+
 
 }
 }

@@ -11,6 +11,7 @@ import { CategorysrondomComponent } from './components/categorysrondom/categorys
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { ServicePageComponent } from './components/service-page/service-page.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './components/home/home.component';
     CategorysrondomComponent,
     AboutComponent,
     HomeComponent,
+    ServicePageComponent,
 
 
   ],
